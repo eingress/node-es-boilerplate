@@ -1,0 +1,37 @@
+{
+  "name": "node-babel-boilerplate",
+  "version": "0.1.0",
+  "description": "A minimalist Node.js ES2018 boilerplate with babel, eslint, jest, nodemon, and prettier.",
+  "repository": "https://github.com/eingress/node-babel-boilerplate.git",
+  "author": "Scott Mathieson <scott@eingress.io>",
+  "license": "ISC",
+  "keywords": [
+    "babel",
+    "eslint",
+    "jest",
+    "node",
+    "prettier"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "coverage": "jest --collectCoverageFrom=src/**.js --coverage",
+    "lint": "eslint '*/**/*.{js}' --fix --quiet",
+    "start": "babel-node src/index.js",
+    "start:dev": "nodemon src/index.js",
+    "test": "jest --silent",
+    "test:watch": "jest --silent --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/node": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "babel-eslint": "10.0.2",
+    "eslint": "6.1.0",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "jest": "24.8.0",
+    "nodemon": "1.19.1",
+    "prettier": "1.18.2"
+  }
+}
