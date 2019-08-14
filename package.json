@@ -14,8 +14,8 @@
   ],
   "main": "src/index.js",
   "scripts": {
-    "coverage": "jest --collectCoverageFrom=src/**.js --coverage",
-    "lint": "eslint '*/**/*.{js}' --fix --quiet",
+    "coverage": "jest --collectCoverageFrom=src/**/*.js --coverage",
+    "lint": "eslint './{,{__tests__,src}/**/}*.js' --fix --quiet",
     "start": "babel-node src/index.js",
     "start:dev": "nodemon src/index.js",
     "test": "jest --silent",
