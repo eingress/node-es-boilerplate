@@ -12,15 +12,18 @@
     "node",
     "prettier"
   ],
-  "main": "src/index.js",
   "scripts": {
+    "build": "babel src -d dist",
+    "build:watch": "yarn build -w",
     "coverage": "jest --collectCoverageFrom=src/**/*.js --coverage",
     "lint": "eslint './{,{__tests__,src}/**/}*.js' --fix --quiet",
-    "start": "babel-node src/index.js",
+    "prestart": "yarn build",
+    "start": "node dist/index.js",
     "start:dev": "nodemon src/index.js",
     "test": "jest --silent",
     "test:watch": "jest --silent --watch"
   },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "7.5.5",
     "@babel/core": "7.5.5",
