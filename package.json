@@ -13,7 +13,8 @@
     "prettier"
   ],
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "yarn build:clean && babel src -d dist",
+    "build:clean": "rimraf dist/*",
     "build:watch": "yarn build -w",
     "coverage": "jest --collectCoverageFrom=src/**/*.js --coverage",
     "lint": "eslint './{,{__tests__,src}/**/}*.js' --fix --quiet",
@@ -35,6 +36,7 @@
     "eslint-plugin-prettier": "3.1.0",
     "jest": "24.9.0",
     "nodemon": "1.19.1",
-    "prettier": "1.18.2"
+    "prettier": "1.18.2",
+    "rimraf": "3.0.0"
   }
 }
