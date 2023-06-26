@@ -9,7 +9,7 @@
   ],
   "signal": "SIGTERM",
   "watch": [
-    "./__tests__",
-    "./src"
+    "./src",
+    "./tests"
   ]
 }

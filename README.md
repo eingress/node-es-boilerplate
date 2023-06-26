@@ -1,11 +1,11 @@
-# Node ES2018 Boilerplate
+# Node ES Boilerplate
 
-A minimalist Node.js ES2018 boilerplate with babel, eslint, jest, nodemon, and prettier.
+A minimalist Node.js ECMAScript boilerplate with babel, eslint, nodemon, and prettier.
 
 ## Usage
 
 ```sh
-git clone --depth=1 https://github.com/eingress/node-es2018-boilerplate.git <ProjectName>
+git clone --depth=1 https://github.com/eingress/node-es-boilerplate.git <ProjectName>
 cd $_ && rm -rf .git
 yarn install
 ```
