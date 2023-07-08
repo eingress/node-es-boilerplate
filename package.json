@@ -20,7 +20,7 @@
     "build:clean": "rimraf dist/*",
     "build:watch": "yarn build -w",
     "coverage": "node --experimental-test-coverage --test tests/*",
-    "lint": "eslint './{,{__tests__,src}/**/}*.js' --fix --quiet",
+    "lint": "eslint './{,{src,tests}/**/}*.js' --fix --quiet",
     "prestart": "yarn build",
     "start": "node dist/index.js",
     "start:dev": "nodemon src/index.js",
